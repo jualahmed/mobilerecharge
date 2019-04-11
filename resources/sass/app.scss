@@ -1,0 +1,33 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@import '~bootstrap/scss/bootstrap';
+
+// Variables
+@import 'variables';
+@import 'btn';
+@import 'form';
+@import 'login';
+@import 'header';
+@import 'recharge';
+@import 'footer';
+@import 'home';
+@import 'shadow';
+@import 'dingrecharge';
+@import 'bootstrap-social';
+
+
+// Bootstrap
+
+.navbar-laravel {
+  background-color: #fff;
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+	box-shadow: 0 1px 6px rgba(57,73,76,.35);
+  .nav-item{
+    padding: 10px;
+  }
+}
+
+body{
+	font-family: 'Roboto', sans-serif!important;
+}

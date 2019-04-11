@@ -1,0 +1,12 @@
+ftp
+Password: j;_o$;6&-lSz
+
+FTP Username: jualahmed@guerrasenterprisesinc.com
+FTP server: ftp.unlockbyguerra.com
+FTP & explicit FTPS port: 21
+
+database info
+password: Eq;G0SZtstW}
+
+User: yasniel0_mobile 
+Database: yasniel0_mobilerechargeweb

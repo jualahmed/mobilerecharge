@@ -1,0 +1,10 @@
+PROJECT NAME
+mobilerechargeweb.com
+ACCOUNT SID
+ACed2561efa3434a959d1f857d8a0d649c
+AUTH TOKEN
+c2dd6c80bd0e40056d718c69104ffa11
+
+pass=Guerra8703092006
+
+https://www.twilio.com/docs/api?filter-product=sms
