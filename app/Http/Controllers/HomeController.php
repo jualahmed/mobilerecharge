@@ -8,6 +8,7 @@ use App\Recharge;
 use App\Country;
 use App\Operator;
 use App\product;
+use GuzzleHttp\Client;
 class HomeController extends Controller
 {
     /**
@@ -45,6 +46,29 @@ class HomeController extends Controller
     public function test(){
       $allcountry=Country::all();
       return view('recharge/test')->with('allcountry',$allcountry);
+    }
+
+    public function another(){
+      $client=new Client();
+
+      $login="guerrarecharge";
+      $token="606238981457";
+      $key=time();
+      $md5=md5($login.$token.$key);
+      $url='https://airtime.transferto.com/cgi-bin/shop/topup';
+
+      $response = $client->request('POST', $url, [
+        'form_params' => [
+            'login' => $login,
+            'key' => $key,
+            'md5' => $md5,
+            // 'info_type' => "country",
+            // 'content' => '678',
+            'action' => "check",
+        ]
+      ]);
+
+      dump($response->getBody());
     }
 
     public function dolorphonetest(){

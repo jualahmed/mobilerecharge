@@ -21,17 +21,11 @@ window.Vue = require('vue');
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+import PrettyCheck from 'pretty-checkbox-vue/check';
 
-	import PrettyCheck from 'pretty-checkbox-vue/check';
-
-    Vue.component('p-check', PrettyCheck);
-
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('Recharge', require('./components/Recharge.vue').default);
+Vue.component('p-check', PrettyCheck);
 Vue.component('select-country', require('./components/SelectCountry.vue').default);
 Vue.component('twilliosms', require('./components/twilliosms.vue').default);
-Vue.component('dingrecharge', require('./components/dingrecharge.vue').default);
-Vue.component('StepOne', require('./components/StepOne.vue').default);
 Vue.component('dingrecharge1', require('./components/dingrecharge1.vue').default);
 
 /**

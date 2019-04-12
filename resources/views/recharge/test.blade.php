@@ -3,16 +3,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <?php
-    $login="guerrarecharge";
-    
-    $token="606238981457";
-    //  MD5 calculation
-    $key=time();
-
-    $md5=md5($login.$token.$key);
-
-    $url='https://airtime.transferto.com/cgi-bin/shop/topup';
-
+  $login="guerrarecharge";
+  $token="606238981457";
+  $key=time();
+  $md5=md5($login.$token.$key);
+  $url='https://airtime.transferto.com/cgi-bin/shop/topup';
 ?>
 
 <div id="apps">

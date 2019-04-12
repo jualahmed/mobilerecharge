@@ -21,7 +21,7 @@ Route::group(
 
 	// country
 	Route::get('/country', 'RechargeController@show');
-	Route::get('/allcountry', 'RechargeController@getallcuntry');
+	Route::get('/allcountrys', 'RechargeController@getallcuntry');
 	Route::get('/country/{id}', 'RechargeController@getcuntry');
 
 	// operators
@@ -29,7 +29,7 @@ Route::group(
 	Route::get('/product/{id}', 'ProductController@index');
 
 	// all test here
-	Route::get('/test', 'HomeController@test');// for insert product into table
+	Route::get('/test', 'HomeController@another');// for insert product into table
 	Route::get('/dolorphonetest', 'HomeController@dolorphonetest');
 	Route::get('/operator', 'HomeController@operator');// for insert product into table
 	Route::post('/operators', 'RechargeController@test')->name('operators');

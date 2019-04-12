@@ -114,6 +114,9 @@ class RechargeController extends Controller
 
 
     public function getallcuntry(){
+
+      
+
       $country=Country::all();
       return $country;
     }
